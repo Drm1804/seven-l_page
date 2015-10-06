@@ -2,7 +2,8 @@
   "name": "7-line",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "fancybox": "~2.1.5"
   },
   "devDependencies": {
     "chai": "~3.3.0",

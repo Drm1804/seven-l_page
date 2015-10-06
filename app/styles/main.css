@@ -232,11 +232,24 @@ section {
   box-shadow: 0 0 15px #e7e7e7;
   margin: 10px 0;
 }
+.b-sec-big-col-part{
+  position: relative;
+}
 .b-sec-big-col-part__img{
   display: block;
   margin: 35px auto 10px;
 }
-
+.b-sec-main-part-layer{
+  position: absolute;
+  border: 2px solid #ff5400;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
 .b-sec-big-col__h1{
   font-size: 1.81em;
 }
