@@ -1,0 +1,108 @@
+@font-face {
+    font-family:'PTSans-Regular';
+    src: url('../fonts/PTSans-Regular_gdi.eot');
+    src: url('../fonts/PTSans-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSans-Regular_gdi.woff') format('woff'),
+    url('../fonts/PTSans-Regular_gdi.ttf') format('truetype'),
+    url('../fonts/PTSans-Regular_gdi.svg#PTSans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB02;
+}
+body{
+    font-family:'PTSans-Regular';
+}
+
+.width{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header{
+    background: #343434;
+    width: 100%;
+
+}
+.b-header-left-col{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+
+}
+.b-header-right-col{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+
+}
+.b-header-right__col{
+    float: right;
+}
+
+.b-header-tel{
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-header-email{
+    display: inline-block;
+    vertical-align: middle;
+}
+.b-header-h1{
+    padding: 22px 10px;
+    color: #FFFFFF;
+    font-size: 2.28em;
+}
+.b-header-tel{
+    color: #FFFFFF;
+    font-size: 1.27em;
+}
+.b-header-tel:before{
+    content: "";
+    display: block;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background: url(../images/tel.png) 50% 50% no-repeat;
+    margin: 0 10px;
+}
+.b-header-email{
+    color: #FFFFFF;
+    font-size: .94em;
+    line-height: 1.4em;
+}
+.b-header-email:before{
+    content: '';
+    display: block;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background: url(../images/mail.png) 50% 50% no-repeat;
+    margin: 0 20px;
+}
+
+
+/*Section*/
+section{
+    padding-top: 20px;
+}
+.b-sec-min-col{
+    display: inline-block;
+    width: 29%;
+    vertical-align: middle;
+}
+.b-sec-part-box{
+    background: #e4e4e4;
+    width: 100%;
+    overflow: hidden;
+}
+.b-sec-part-box__ul{
+    width: 90%;
+    float: right;
+}
+
+.b-sec-big-col{
+    display: inline-block;
+    width: 71%;
+    vertical-align: middle;
+}
