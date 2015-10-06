@@ -16,7 +16,8 @@ body {
 }
 
 .width {
-  width: 1140px;
+  max-width: 1140px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -109,10 +110,6 @@ section {
   padding: 15px 0;
 }
 
-.b-sec-part-box__ul {
-  width: 90%;
-  float: right;
-}
 
 .b-sec-big-col {
   display: inline-block;
@@ -122,9 +119,13 @@ section {
 }
 
 .b-sec-cat-box {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  transition-duration: .8s;
 }
-
+.b-sec-cat-box--show{
+  height: 80px;
+}
 .b-sec-part-box-cat-span {
   color: #0075c7;
   font-size: 2em;
@@ -135,9 +136,6 @@ section {
   font-size: .85em;
   line-height: 2.25em;
 }
-
-
-
 .b-sec-part-box__cat:hover .b-sec-part-box-cat-span {
   color: #FFFFFF;
 }
@@ -145,10 +143,19 @@ section {
 .b-sec-part-box__cat:hover .b-sec-part-box-cat-span__line {
   border-bottom: 1px solid transparent;
 }
-
+.b-sec-part-box__cat--check{
+  background: #ca4300;
+}
+.b-sec-part-box__cat--check .b-sec-part-box-cat-span{
+  color: #FFFFFF;
+}
+.b-sec-part-box__cat--check .b-sec-part-box-cat-span__line{
+  border-bottom: 1px solid transparent;
+}
 .b-sec-part-box__cat {
   text-decoration: none;
   display: block;
+  padding: 0 0 0 20px;
 
 }
 .b-sec-part-box__cat:hover {
@@ -163,8 +170,8 @@ section {
   display: inline-block;
   vertical-align: middle;
   border-right: 1px solid #b4b4b4;
-  width: 62%;
-  padding: 10px 0;
+  width: 56%;
+  padding: 10px 0 10px 20px;
 }
 .b-sec-cat-box-big-col > p {
   color: #0075c7;
@@ -185,9 +192,6 @@ section {
   height: 1px;
   width: 100%;
   background: #b4b4b4;
-}
-.b-sec-cat-box-small-col{
-
 }
 .b-sec-cat-box-small-col > p {
   color: #0075c7;
@@ -268,7 +272,7 @@ section {
 }
 footer{
   background: #dcdcdc;
-  height: 50px;
+  min-height: 50px;
 }
 .b-footer-left__col{
   display: inline-block;
@@ -302,4 +306,38 @@ footer{
 }
 .b-header-email--footer:before{
   display: none;
+}
+
+@media(max-width: 960px){
+  .width {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .b-sec-cat-box-big-col{
+    width: 52%;
+  }
+}
+@media(max-width: 790px){
+  .width {
+    width: 100%;
+    min-width: 320px;
+  }
+  .b-header-left-col{
+    width: 100%;
+    text-align: center;
+  }
+  .b-header-right-col{
+    width: 100%;
+  }
+  .b-header-right__col{
+    text-align: center;
+    float: none;
+    padding-bottom: 10px;
+  }
+  .b-sec-min-col{
+    width: 100%;
+  }
+  .b-sec-big-col{
+    width: 100%;
+  }
 }
